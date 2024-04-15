@@ -6,8 +6,6 @@ COPY ./requirements.txt /requirements.txt
 COPY ./app /app
 COPY ./scripts /scripts
 
-RUN pip install uWSGI
-
 RUN apk add --update --no-cache --virtual .tmp gcc libc-dev linux-headers && \
         pip install --upgrade pip && \
         pip install -r /requirements.txt && \
