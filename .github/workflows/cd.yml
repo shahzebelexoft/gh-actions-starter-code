@@ -11,5 +11,5 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Run Tests
-        uses: echo "RUNNING TESTS!"
+        run: echo "RUNNING TESTS!"
 
